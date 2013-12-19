@@ -1,0 +1,72 @@
+ul {
+    width: 150px;
+    height: 30px;
+    position: relative;
+    background: url(stars.png);
+}
+
+li {
+    float: left;
+    height: 30px;
+}
+
+li span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    position: absolute;
+    text-decoration: none;
+    z-index: 10;
+    cursor: pointer;
+}
+li span:hover {
+    background: url(stars.png) left center;
+    left: 0;
+    z-index: 2;
+}
+span.star1 {
+    left: 0;
+}
+
+span.star1:hover {
+    width: 30px;
+}
+
+span.star2 {
+    left: 30px;
+}
+
+span.star2:hover {
+    width: 60px;
+}
+span.star3 {
+    left: 60px;
+}
+span.star3:hover {
+    width: 90px;
+}
+span.star4 {
+    left: 90px;
+}
+
+span.star4:hover {
+    width: 120px;
+}
+
+span.star5 {
+    left: 120px;
+}
+
+span.star5:hover {
+    width: 150px;
+}
+
+li.current {
+    background: url(stars.png) left bottom;
+    z-index: 1;
+}
+
+ul>li span:hover{
+    text-indent: 160px;
+}
